@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1.1" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.27/schema/PackIndex.xsd">
+    <vendor>QuantumLeaps</vendor>
+    <url>https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/</url>
+    <timestamp>2023-10-31T14:44:41.238180</timestamp>
+    <pindex>
+        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/qpc/master/" vendor="QuantumLeaps" name="qpc" version="7.3.0"/>
+        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/qpcpp/master/" vendor="QuantumLeaps" name="qpcpp" version="7.3.0"/>
+    </pindex>
+</index>
