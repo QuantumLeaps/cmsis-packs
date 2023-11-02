@@ -3,17 +3,18 @@
 
 ---------------------------------------------------------------------
 # About This Repository
-This repository contains the [CMSIS Softwre Packs](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html) released by Quantum Leaps.
+This repository contains the [index](QuantumLeaps.pidx) of the [CMSIS Softwre Packs](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html) released by Quantum Leaps. The index currently contains the following packs:
 
-## CMSIS Pack: QuantumLeaps.qpc
-The pack `QuantumLeaps.qpc.<ver>.pack` contains the QP/C RTEF (Real-Time Embedded Framework). After installation, the pack resides in the `RTEF` category.
+- CMSIS-Pack: **QuantumLeaps.qpc**<br>
+The pack [QuantumLeaps.qpc.&lt;ver&gt;.pack](https://github.com/QuantumLeaps/qpc/releases/latest) contains the QP/C RTEF (Real-Time Embedded Framework). After installation, the pack resides in the **RTEF** category.
 
-## CMSIS Pack: QuantumLeaps.qpcpp
-The pack `QuantumLeaps.qpcpp.<ver>.pack` contains the QP/C++ RTEF (Real-Time Embedded Framework). After installation, the pack resides in the `RTEF` category.
-
+- CMSIS-Pack: **QuantumLeaps.qpcpp**<br>
+The pack [QuantumLeaps.qpcpp.&lt;ver&gt;.pack](https://github.com/QuantumLeaps/qpcpp/releases/latest) contains the QP/C++ RTEF (Real-Time Embedded Framework). After installation, the pack resides in the **RTEF** category.
 
 # Installation
-The QuantumLeaps packs can be installed in KEIL MDK and IAR EWARM, as shown in the screen shots below.
+The QuantumLeaps packs can be installed through the [ARM/KEIL CMSIS Pack Server](https://www.keil.arm.com/packs). Alternatively the packs can be downloaded directly from QuantumLeaps GitHub repositories and then installed locally by means of utilities like [cpackget](https://github.com/Open-CMSIS-Pack/cpackget).
+
+After installation, QuantumLeaps packs appear as the **RTEF** Software Component. The screen shots below show how the QuantumLeaps packs look in the KEIL MDK and IAR EWARM.
 
 <p align="center">
 <img src="img/keil-packs.png"/>
