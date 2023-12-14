@@ -2,9 +2,9 @@
 <index xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1.1" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.28/schema/PackIndex.xsd">
     <vendor>QuantumLeaps</vendor>
     <url>https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/</url>
-    <timestamp>2023-12-05T20:40:41.238180</timestamp>
+    <timestamp>2023-12-14T12:40:41.238180</timestamp>
     <pindex>
-        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/" vendor="QuantumLeaps" name="qpc" version="7.3.1"/>
-        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/" vendor="QuantumLeaps" name="qpcpp" version="7.3.1"/>
+        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/" vendor="QuantumLeaps" name="qpc" version="7.3.2"/>
+        <pdsc url="https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/" vendor="QuantumLeaps" name="qpcpp" version="7.3.2"/>
     </pindex>
 </index>

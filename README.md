@@ -3,11 +3,11 @@
 
 ---------------------------------------------------------------------
 # About This Repository
-This repository contains the [index](QuantumLeaps.pidx) of the [CMSIS Softwre Packs](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html) released by Quantum Leaps. The index currently contains the following packs:
+This repository contains the index ([QuantumLeaps.pidx](QuantumLeaps.pidx)) and the descriptions of the following [CMSIS Softwre Packs](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html):
 
-- CMSIS-Pack: [QuantumLeaps.qpc.&lt;ver&gt;.pack](https://github.com/QuantumLeaps/qpc/releases/latest) contains the QP/C RTEF (Real-Time Embedded Framework)
+- [QuantumLeaps.qpc.pdsc](QuantumLeaps.qpc.pdsc) decribes the [QP/C RTEF](https://github.com/QuantumLeaps/qpc) (Real-Time Embedded Framework). All released versions of this pack are named `QuantumLeaps.qpc.<version>.pack` and are located in the [<strong>qpc Releases</strong>](https://github.com/QuantumLeaps/qpc/releases).
 
-- CMSIS-Pack: [QuantumLeaps.qpcpp.&lt;ver&gt;.pack](https://github.com/QuantumLeaps/qpcpp/releases/latest) contains the QP/C++ RTEF (Real-Time Embedded Framework).
+- [QuantumLeaps.qpcpp.pdsc](QuantumLeaps.qpcpp.pdsc) decribes the [QP/C++ RTEF](https://github.com/QuantumLeaps/qpcpp) (Real-Time Embedded Framework). All released versions of this pack are named `QuantumLeaps.qpcpp.<version>.pack` and are located in the [<strong>qpcpp Releases</strong>](https://github.com/QuantumLeaps/qpcpp/releases).
 
 # Installation
 The QuantumLeaps packs can be installed through the [ARM/KEIL CMSIS Pack Server](https://www.keil.arm.com/packs). Alternatively the packs can be downloaded directly from QuantumLeaps GitHub repositories and then installed locally by means of utilities like [cpackget](https://github.com/Open-CMSIS-Pack/cpackget).
