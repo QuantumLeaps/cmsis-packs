@@ -14,6 +14,8 @@
     -->
 
     <releases>
+        <release version="7.3.3" date="2024-03-01" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.3/QuantumLeaps.qpcpp.7.3.3.pack" tag="v7.3.3">QP/C++ 7.3.3. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_3
+        </release>
         <release version="7.3.2" date="2023-12-14" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.2/QuantumLeaps.qpcpp.7.3.2.pack" tag="v7.3.2">QP/C++ 7.3.2. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_2
         </release>
         <release version="7.3.1" date="2023-12-05" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.1/QuantumLeaps.qpcpp.7.3.1.pack" tag="v7.3.1">QP/C++ 7.3.1. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_1
@@ -148,7 +150,7 @@
     </conditions>
 
     <components>
-        <bundle Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cversion="7.3.2">
+        <bundle Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cversion="7.3.3">
             <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
             <doc>https://www.state-machine.com/products/qp/</doc>
 
@@ -210,7 +212,7 @@
                     <file category="source"  name="src/qf/qf_actq.cpp"/>
                     <file category="source"  name="src/qv/qv.cpp"/>
 
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qv/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qv/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qv/armclang/"/>
                     <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qv/armclang/qv_port.cpp"/>
@@ -224,7 +226,7 @@
                     <!--
                     <file category="include" condition="CoreR_ARMCC" name="ports/arm-cr/qv/armclang/"/>
                     -->
-                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qv/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qv/config/qp_config.hpp" version="7.3.3"/>
                     <file category="include" condition="CoreR_GCC"   name="ports/arm-cr/qv/gnu/"/>
                     <file category="include" condition="CoreR_IAR"   name="ports/arm-cr/qv/iar/"/>
                 </files>
@@ -240,7 +242,7 @@
                     <file category="source"  name="src/qf/qf_actq.cpp"/>
                     <file category="source"  name="src/qk/qk.cpp"/>
 
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qk/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qk/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qk/armclang/"/>
                     <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qk/armclang/qk_port.cpp"/>
@@ -254,7 +256,7 @@
                     <!--
                     <file category="include" condition="CoreR_ARMCC" name="ports/arm-cr/qk/armclang/"/>
                     -->
-                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qk/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qk/config/qp_config.hpp" version="7.3.3"/>
                     <file category="include" condition="CoreR_GCC"   name="ports/arm-cr/qk/gnu/"/>
                     <file category="include" condition="CoreR_IAR"   name="ports/arm-cr/qk/iar/"/>
                 </files>
@@ -273,7 +275,7 @@
                     <file category="source"  name="src/qxk/qxk_sema.cpp"/>
                     <file category="source"  name="src/qxk/qxk_xthr.cpp"/>
 
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qxk/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qxk/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qxk/armclang/"/>
                     <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qxk/armclang/qxk_port.cpp"/>
@@ -293,7 +295,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc"     name="https://www.state-machine.com/qpcpp/embos.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" name="ports/embos/"/>
                     <file category="source"  name="ports/embos/qf_port.cpp"/>
@@ -307,7 +309,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc"     name="https://www.state-machine.com/qpcpp/freertos.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" name="ports/freertos/"/>
                     <file category="source"  name="ports/freertos/qf_port.cpp"/>
@@ -321,7 +323,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc"     name="https://www.state-machine.com/qpcpp/threadx.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" name="ports/threadx/"/>
                     <file category="source"  name="ports/threadx/qf_port.cpp"/>
@@ -335,7 +337,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc"     name="https://www.state-machine.com/qpcpp/uc-os2.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" name="ports/uc-os2/"/>
                     <file category="source"  name="ports/uc-os2/qf_port.cpp"/>
@@ -349,7 +351,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc"     name="https://www.state-machine.com/qpcpp/zephyr.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.2"/>
+                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.3"/>
 
                     <file category="include" name="zephyr/"/>
                     <file category="source"  name="zephyr/qf_port.cpp"/>
