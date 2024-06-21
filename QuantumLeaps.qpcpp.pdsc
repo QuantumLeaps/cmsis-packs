@@ -1,32 +1,23 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.7.28" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.28/schema/PACK.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package schemaVersion="1.7.7" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
     <vendor>QuantumLeaps</vendor>
     <name>qpcpp</name>
     <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
     <url>https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/</url>
-    <supportContact>info@state-machine.com.com</supportContact>
-    <repository type="git">https://github.com/QuantumLeaps/qpcpp.git</repository>
     <license>LICENSES/License.txt</license>
-    <!--
-    <changelogs>
-        <changelog id="all" default="true" name="https://www.state-machine.com/qpcpp/history.html"/>
-    </changelogs>
-    -->
-
+    <supportContact>info@state-machine.com.com</supportContact>
     <releases>
-        <release version="7.3.4" date="2024-03-21" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.4/QuantumLeaps.qpcpp.7.3.4.pack" tag="v7.3.4">QP/C++ 7.3.4. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_4
+        <release date="2024-03-21" tag="v7.3.4" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.4/QuantumLeaps.qpcpp.7.3.4.pack" version="7.3.4">QP/C++ 7.3.4. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_4
         </release>
-        <release version="7.3.3" date="2024-03-01" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.3/QuantumLeaps.qpcpp.7.3.3.pack" tag="v7.3.3">QP/C++ 7.3.3. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_3
+        <release date="2024-03-01" tag="v7.3.3" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.3/QuantumLeaps.qpcpp.7.3.3.pack" version="7.3.3">QP/C++ 7.3.3. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_3
         </release>
-        <release version="7.3.2" date="2023-12-14" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.2/QuantumLeaps.qpcpp.7.3.2.pack" tag="v7.3.2">QP/C++ 7.3.2. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_2
+        <release date="2023-12-14" tag="v7.3.2" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.2/QuantumLeaps.qpcpp.7.3.2.pack" version="7.3.2">QP/C++ 7.3.2. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_2
         </release>
-        <release version="7.3.1" date="2023-12-05" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.1/QuantumLeaps.qpcpp.7.3.1.pack" tag="v7.3.1">QP/C++ 7.3.1. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_1
+        <release date="2023-12-05" tag="v7.3.1" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.1/QuantumLeaps.qpcpp.7.3.1.pack" version="7.3.1">QP/C++ 7.3.1. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_1
         </release>
-        <release version="7.3.0" date="2023-09-12" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.0/QuantumLeaps.qpcpp.7.3.0.pack" tag="v7.3.0">QP/C++ 7.3.0. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_0
+        <release date="2023-09-12" tag="v7.3.0" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.0/QuantumLeaps.qpcpp.7.3.0.pack" version="7.3.0">QP/C++ 7.3.0. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_0
         </release>
     </releases>
-
-    <!-- keywords for indexing -->
     <keywords>
         <keyword>QuantumLeaps</keyword>
         <keyword>Samek</keyword>
@@ -55,13 +46,11 @@
         <keyword>real-time framework</keyword>
         <keyword>RTEF</keyword>
     </keywords>
-
     <taxonomy>
         <description Cclass="RTEF" doc="https://www.state-machine.com/rtef">Real Time Embedded Framework</description>
     </taxonomy>
-
+    <repository type="git">https://github.com/QuantumLeaps/qpcpp.git</repository>
     <conditions>
-        <!-- compilers -->
         <condition id="ARMCC">
             <accept Tcompiler="ARMCC"/>
         </condition>
@@ -71,8 +60,6 @@
         <condition id="IAR">
             <require Tcompiler="IAR"/>
         </condition>
-
-        <!-- core-M -->
         <condition id="CoreM">
             <description>Cortex-M processor based device</description>
             <accept Dcore="Cortex-M0"/>
@@ -89,277 +76,221 @@
             <accept Dcore="SC000"/>
             <accept Dcore="SC300"/>
         </condition>
-
-        <!-- core-R -->
         <condition id="CoreR">
             <description>Cortex-R processor based device</description>
             <accept Dcore="Cortex-R4"/>
         </condition>
-
         <condition id="CoreM_ARMCC">
-          <description>Cortex-M processor based device for the ARM Compiler6</description>
-          <require condition="CoreM"/>
-          <require condition="ARMCC"/>
+            <description>Cortex-M processor based device for the ARM Compiler6</description>
+            <require condition="CoreM"/>
+            <require condition="ARMCC"/>
         </condition>
-
         <condition id="CoreM_GCC">
-          <description>Cortex-M processor based device for the GNU-ARM</description>
-          <require condition="CoreM"/>
-          <require condition="GCC"/>
+            <description>Cortex-M processor based device for the GNU-ARM</description>
+            <require condition="CoreM"/>
+            <require condition="GCC"/>
         </condition>
-
         <condition id="CoreM_IAR">
-          <description>Cortex-M processor based device for the IAR-ARM</description>
-          <require condition="CoreM"/>
-          <require condition="IAR"/>
+            <description>Cortex-M processor based device for the IAR-ARM</description>
+            <require condition="CoreM"/>
+            <require condition="IAR"/>
         </condition>
-
-        <!--
-        <condition id="CoreR_ARMCC">
-          <description>Cortex-R processor based device for the ARM Compiler6</description>
-          <require condition="CoreR"/>
-          <require condition="ARMCC"/>
-        </condition>
-        -->
         <condition id="CoreR_GCC">
-          <description>Cortex-R processor based device for the GNU-ARM</description>
-          <require condition="CoreR"/>
-          <require condition="GCC"/>
+            <description>Cortex-R processor based device for the GNU-ARM</description>
+            <require condition="CoreR"/>
+            <require condition="GCC"/>
         </condition>
-
         <condition id="CoreR_IAR">
-          <description>Cortex-R processor based device for the IAR-ARM</description>
-          <require condition="CoreR"/>
-          <require condition="IAR"/>
+            <description>Cortex-R processor based device for the IAR-ARM</description>
+            <require condition="CoreR"/>
+            <require condition="IAR"/>
         </condition>
-
         <condition id="Comp_qep">
-          <description>Component qep selected</description>
-          <require Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cgroup="Event Processor" Cvariant="qep"/>
+            <description>Component qep selected</description>
+            <require Cbundle="qpcpp" Cclass="RTEF" Cgroup="Event Processor" Cvariant="qep"/>
         </condition>
-
         <condition id="Comp_qf">
-          <description>Component qf selected</description>
-          <require Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cgroup="Framework" Cvariant="qf"/>
+            <description>Component qf selected</description>
+            <require Cbundle="qpcpp" Cclass="RTEF" Cgroup="Framework" Cvariant="qf"/>
         </condition>
-
         <condition id="CoreM Comp_qf">
-          <description>CoreM and Component qf selected</description>
-          <require condition="CoreM"/>
-          <require Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cgroup="Framework" Cvariant="qf"/>
+            <description>CoreM and Component qf selected</description>
+            <require condition="CoreM"/>
+            <require Cbundle="qpcpp" Cclass="RTEF" Cgroup="Framework" Cvariant="qf"/>
         </condition>
-
     </conditions>
-
     <components>
-        <bundle Cclass="RTEF" Cbundle="QuantumLeaps QP/C++" Cversion="7.3.4">
+        <bundle Cbundle="qpcpp" Cclass="RTEF" Cversion="7.3.4">
             <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
             <doc>https://www.state-machine.com/products/qp/</doc>
-
             <component Cgroup="Event Processor" Cvariant="qep">
                 <description>Events and Hierarchical State Machines</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QEP      /* QP/C++ QEP */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_sm.html"/>
-                    <file category="header"  name="include/qpcpp.hpp"/>
-                    <file category="source"  name="src/qf/qep_hsm.cpp"/>
-                    <file category="source"  name="src/qf/qep_msm.cpp"/>
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_sm.html"/>
+                    <file category="header" name="include/qpcpp.hpp"/>
+                    <file category="source" name="src/qf/qep_hsm.cpp"/>
+                    <file category="source" name="src/qf/qep_msm.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Framework" Cvariant="qf" condition="Comp_qep">
                 <description>Active-Object (Actor) Framework</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QF       /* QP/C++ QF */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_ao.html"/>
-                    <file category="source"  name="src/qf/qf_act.cpp"/>
-                    <file category="source"  name="src/qf/qf_defer.cpp"/>
-                    <file category="source"  name="src/qf/qf_dyn.cpp"/>
-                    <file category="source"  name="src/qf/qf_mem.cpp"/>
-                    <file category="source"  name="src/qf/qf_ps.cpp"/>
-                    <file category="source"  name="src/qf/qf_qact.cpp"/>
-                    <file category="source"  name="src/qf/qf_qeq.cpp"/>
-                    <file category="source"  name="src/qf/qf_qmact.cpp"/>
-                    <file category="source"  name="src/qf/qf_time.cpp"/>
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_ao.html"/>
+                    <file category="source" name="src/qf/qf_act.cpp"/>
+                    <file category="source" name="src/qf/qf_defer.cpp"/>
+                    <file category="source" name="src/qf/qf_dyn.cpp"/>
+                    <file category="source" name="src/qf/qf_mem.cpp"/>
+                    <file category="source" name="src/qf/qf_ps.cpp"/>
+                    <file category="source" name="src/qf/qf_qact.cpp"/>
+                    <file category="source" name="src/qf/qf_qeq.cpp"/>
+                    <file category="source" name="src/qf/qf_qmact.cpp"/>
+                    <file category="source" name="src/qf/qf_time.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Software tracing" Cvariant="qs" condition="Comp_qep">
                 <description>Software Tracing (Target-Resident Component)</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QS       /* QP/C++ QS */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_qs.html"/>
-                    <file category="source"  name="src/qs/qs.cpp"/>
-                    <file category="source"  name="src/qs/qs_64bit.cpp"/>
-                    <file category="source"  name="src/qs/qs_fp.cpp"/>
-                    <file category="source"  name="src/qs/qs_rx.cpp"/>
-                    <file category="source"  name="src/qs/qstamp.cpp"/>
-                    <file category="source"  name="src/qs/qutest.cpp"/>
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qs.html"/>
+                    <file category="source" name="src/qs/qs.cpp"/>
+                    <file category="source" name="src/qs/qs_64bit.cpp"/>
+                    <file category="source" name="src/qs/qs_fp.cpp"/>
+                    <file category="source" name="src/qs/qs_rx.cpp"/>
+                    <file category="source" name="src/qs/qstamp.cpp"/>
+                    <file category="source" name="src/qs/qutest.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="qv" condition="Comp_qf">
                 <description>Cooperative run-to-completion kernel</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QV       /* QP/C++ QV kernel */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_qv.html"/>
-                    <file category="source"  name="src/qf/qf_actq.cpp"/>
-                    <file category="source"  name="src/qv/qv.cpp"/>
-
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qv/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qv.html"/>
+                    <file category="source" name="src/qf/qf_actq.cpp"/>
+                    <file category="source" name="src/qv/qv.cpp"/>
+                    <file attr="config" category="header" condition="CoreM" name="ports/arm-cm/qv/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qv/armclang/"/>
-                    <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qv/armclang/qv_port.cpp"/>
-
-                    <file category="include" condition="CoreM_GCC"   name="ports/arm-cm/qv/gnu/"/>
-                    <file category="source"  condition="CoreM_GCC"   name="ports/arm-cm/qv/gnu/qv_port.cpp"/>
-
-                    <file category="include" condition="CoreM_IAR"   name="ports/arm-cm/qv/iar/"/>
-                    <file category="source"  condition="CoreM_IAR"   name="ports/arm-cm/qv/iar/qv_port.cpp"/>
-
-                    <!--
-                    <file category="include" condition="CoreR_ARMCC" name="ports/arm-cr/qv/armclang/"/>
-                    -->
-                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qv/config/qp_config.hpp" version="7.3.4"/>
-                    <file category="include" condition="CoreR_GCC"   name="ports/arm-cr/qv/gnu/"/>
-                    <file category="include" condition="CoreR_IAR"   name="ports/arm-cr/qv/iar/"/>
+                    <file category="source" condition="CoreM_ARMCC" name="ports/arm-cm/qv/armclang/qv_port.cpp"/>
+                    <file category="include" condition="CoreM_GCC" name="ports/arm-cm/qv/gnu/"/>
+                    <file category="source" condition="CoreM_GCC" name="ports/arm-cm/qv/gnu/qv_port.cpp"/>
+                    <file category="include" condition="CoreM_IAR" name="ports/arm-cm/qv/iar/"/>
+                    <file category="source" condition="CoreM_IAR" name="ports/arm-cm/qv/iar/qv_port.cpp"/>
+                    <file attr="config" category="header " condition="CoreR" name="ports/arm-cr/qv/config/qp_config.hpp" version="7.3.4"/>
+                    <file category="include" condition="CoreR_GCC" name="ports/arm-cr/qv/gnu/"/>
+                    <file category="include" condition="CoreR_IAR" name="ports/arm-cr/qv/iar/"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="qk" condition="Comp_qf" isDefaultVariant="true">
                 <description>Preemptive non-blocking kernel</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QK       /* QP/C++ QK kernel */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_qk.html"/>
-                    <file category="source"  name="src/qf/qf_actq.cpp"/>
-                    <file category="source"  name="src/qk/qk.cpp"/>
-
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qk/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qk.html"/>
+                    <file category="source" name="src/qf/qf_actq.cpp"/>
+                    <file category="source" name="src/qk/qk.cpp"/>
+                    <file attr="config" category="header" condition="CoreM" name="ports/arm-cm/qk/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qk/armclang/"/>
-                    <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qk/armclang/qk_port.cpp"/>
-
-                    <file category="include" condition="CoreM_GCC"   name="ports/arm-cm/qk/gnu/"/>
-                    <file category="source"  condition="CoreM_GCC"   name="ports/arm-cm/qk/gnu/qk_port.cpp"/>
-
-                    <file category="include" condition="CoreM_IAR"   name="ports/arm-cm/qk/iar/"/>
-                    <file category="source"  condition="CoreM_IAR"   name="ports/arm-cm/qk/iar/qk_port.cpp"/>
-
-                    <!--
-                    <file category="include" condition="CoreR_ARMCC" name="ports/arm-cr/qk/armclang/"/>
-                    -->
-                    <file category="header " condition="CoreR" attr="config" name="ports/arm-cr/qk/config/qp_config.hpp" version="7.3.4"/>
-                    <file category="include" condition="CoreR_GCC"   name="ports/arm-cr/qk/gnu/"/>
-                    <file category="include" condition="CoreR_IAR"   name="ports/arm-cr/qk/iar/"/>
+                    <file category="source" condition="CoreM_ARMCC" name="ports/arm-cm/qk/armclang/qk_port.cpp"/>
+                    <file category="include" condition="CoreM_GCC" name="ports/arm-cm/qk/gnu/"/>
+                    <file category="source" condition="CoreM_GCC" name="ports/arm-cm/qk/gnu/qk_port.cpp"/>
+                    <file category="include" condition="CoreM_IAR" name="ports/arm-cm/qk/iar/"/>
+                    <file category="source" condition="CoreM_IAR" name="ports/arm-cm/qk/iar/qk_port.cpp"/>
+                    <file attr="config" category="header " condition="CoreR" name="ports/arm-cr/qk/config/qp_config.hpp" version="7.3.4"/>
+                    <file category="include" condition="CoreR_GCC" name="ports/arm-cr/qk/gnu/"/>
+                    <file category="include" condition="CoreR_IAR" name="ports/arm-cr/qk/iar/"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="qxk" condition="CoreM Comp_qf">
                 <description>Preemptive blocking/non-blocking kernel</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_QXK      /* QP/C++ QXK kernel */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/srs_qxk.html"/>
-                    <file category="source"  name="src/qf/qf_actq.cpp"/>
-                    <file category="source"  name="src/qxk/qxk.cpp"/>
-                    <file category="source"  name="src/qxk/qxk_mutex.cpp"/>
-                    <file category="source"  name="src/qxk/qxk_sema.cpp"/>
-                    <file category="source"  name="src/qxk/qxk_xthr.cpp"/>
-
-                    <file category="header"  condition="CoreM" attr="config" name="ports/arm-cm/qxk/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qxk.html"/>
+                    <file category="source" name="src/qf/qf_actq.cpp"/>
+                    <file category="source" name="src/qxk/qxk.cpp"/>
+                    <file category="source" name="src/qxk/qxk_mutex.cpp"/>
+                    <file category="source" name="src/qxk/qxk_sema.cpp"/>
+                    <file category="source" name="src/qxk/qxk_xthr.cpp"/>
+                    <file attr="config" category="header" condition="CoreM" name="ports/arm-cm/qxk/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" condition="CoreM_ARMCC" name="ports/arm-cm/qxk/armclang/"/>
-                    <file category="source"  condition="CoreM_ARMCC" name="ports/arm-cm/qxk/armclang/qxk_port.cpp"/>
-
-                    <file category="include" condition="CoreM_GCC"   name="ports/arm-cm/qxk/gnu/"/>
-                    <file category="source"  condition="CoreM_GCC"   name="ports/arm-cm/qxk/gnu/qxk_port.cpp"/>
-
-                    <file category="include" condition="CoreM_IAR"   name="ports/arm-cm/qxk/iar/"/>
-                    <file category="source"  condition="CoreM_IAR"   name="ports/arm-cm/qxk/iar/qxk_port.cpp"/>
+                    <file category="source" condition="CoreM_ARMCC" name="ports/arm-cm/qxk/armclang/qxk_port.cpp"/>
+                    <file category="include" condition="CoreM_GCC" name="ports/arm-cm/qxk/gnu/"/>
+                    <file category="source" condition="CoreM_GCC" name="ports/arm-cm/qxk/gnu/qxk_port.cpp"/>
+                    <file category="include" condition="CoreM_IAR" name="ports/arm-cm/qxk/iar/"/>
+                    <file category="source" condition="CoreM_IAR" name="ports/arm-cm/qxk/iar/qxk_port.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="third-party embOS" condition="Comp_qf">
                 <description>QP/C++ port to SEGGER embOS RTOS</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_EMBOS    /* QP/C++-embOS port */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/embos.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/embos.html"/>
+                    <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/embos/"/>
-                    <file category="source"  name="ports/embos/qf_port.cpp"/>
+                    <file category="source" name="ports/embos/qf_port.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="third-party FreeRTOS" condition="Comp_qf">
                 <description>QP/C++ port to Amazon FreeRTOS</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_FREERTOS /* QP/C++-FreeRTOS port */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/freertos.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/freertos.html"/>
+                    <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/freertos/"/>
-                    <file category="source"  name="ports/freertos/qf_port.cpp"/>
+                    <file category="source" name="ports/freertos/qf_port.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="third-party ThreadX" condition="Comp_qf">
                 <description>QP/C++ port to Azure RTOS (ThreadX)</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_THREADX  /* QP/C++-ThreadX port */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/threadx.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/threadx.html"/>
+                    <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/threadx/"/>
-                    <file category="source"  name="ports/threadx/qf_port.cpp"/>
+                    <file category="source" name="ports/threadx/qf_port.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="third-party uC-OS2" condition="Comp_qf">
                 <description>QP/C++ port to Micrium uC-OS2 RTOS</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_UCOS2    /* QP/C++-uC-OS2 port */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/uc-os2.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/uc-os2.html"/>
+                    <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/uc-os2/"/>
-                    <file category="source"  name="ports/uc-os2/qf_port.cpp"/>
+                    <file category="source" name="ports/uc-os2/qf_port.cpp"/>
                 </files>
             </component>
-
             <component Cgroup="Real-Time Kernel" Cvariant="third-party Zephyr" condition="Comp_qf">
                 <description>QP/C++ port to Zephyr RTOS</description>
                 <RTE_Components_h>
                     #define RTE_RTEF_QPCPP_ZEPHYR   /* QP/C++-Zephyr port */
                 </RTE_Components_h>
                 <files>
-                    <file category="doc"     name="https://www.state-machine.com/qpcpp/zephyr.html"/>
-                    <file category="header"  attr="config" name="ports/config/qp_config.hpp" version="7.3.4"/>
-
+                    <file category="doc" name="https://www.state-machine.com/qpcpp/zephyr.html"/>
+                    <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="zephyr/"/>
-                    <file category="source"  name="zephyr/qf_port.cpp"/>
+                    <file category="source" name="zephyr/qf_port.cpp"/>
                 </files>
             </component>
-
         </bundle>
     </components>
 </package>
