@@ -131,6 +131,11 @@
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_sm.html"/>
                     <file category="header" name="include/qpcpp.hpp"/>
+                    <file category="header" name="include/qp.hpp"/>
+                    <file category="header" name="include/qp_pkg.hpp"/>
+                    <file category="header" name="include/qsafe.h"/>
+                    <file category="header" name="include/qs_dummy.hpp"/>
+                    <file category="header" name="include/qstamp.hpp"/>
                     <file category="source" name="src/qf/qep_hsm.cpp"/>
                     <file category="source" name="src/qf/qep_msm.cpp"/>
                 </files>
@@ -142,6 +147,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_ao.html"/>
+                    <file category="header" name="include/qequeue.hpp"/>
+                    <file category="header" name="include/qmpool.hpp"/>
                     <file category="source" name="src/qf/qf_act.cpp"/>
                     <file category="source" name="src/qf/qf_defer.cpp"/>
                     <file category="source" name="src/qf/qf_dyn.cpp"/>
@@ -160,6 +167,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qs.html"/>
+                    <file category="header" name="include/qs.hpp"/>
+                    <file category="header" name="include/qs_pkg.hpp"/>
                     <file category="source" name="src/qs/qs.cpp"/>
                     <file category="source" name="src/qs/qs_64bit.cpp"/>
                     <file category="source" name="src/qs/qs_fp.cpp"/>
@@ -175,6 +184,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qv.html"/>
+                    <file category="header" name="include/qv.hpp"/>
                     <file category="source" name="src/qf/qf_actq.cpp"/>
                     <file category="source" name="src/qv/qv.cpp"/>
                     <file attr="config" category="header" condition="CoreM" name="ports/arm-cm/qv/config/qp_config.hpp" version="7.3.4"/>
@@ -196,6 +206,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qk.html"/>
+                    <file category="header" name="include/qk.hpp"/>
                     <file category="source" name="src/qf/qf_actq.cpp"/>
                     <file category="source" name="src/qk/qk.cpp"/>
                     <file attr="config" category="header" condition="CoreM" name="ports/arm-cm/qk/config/qp_config.hpp" version="7.3.4"/>
@@ -217,6 +228,7 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/srs_qxk.html"/>
+                    <file category="header" name="include/qxk.hpp"/>
                     <file category="source" name="src/qf/qf_actq.cpp"/>
                     <file category="source" name="src/qxk/qxk.cpp"/>
                     <file category="source" name="src/qxk/qxk_mutex.cpp"/>
@@ -238,6 +250,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/embos.html"/>
+                    <file category="header" name="ports/embos/qp_port.hpp"/>
+                    <file category="header" name="ports/embos/qs_port.hpp"/>
                     <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/embos/"/>
                     <file category="source" name="ports/embos/qf_port.cpp"/>
@@ -250,6 +264,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/freertos.html"/>
+                    <file category="header" name="ports/freertos/qp_port.hpp"/>
+                    <file category="header" name="ports/freertos/qs_port.hpp"/>
                     <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/freertos/"/>
                     <file category="source" name="ports/freertos/qf_port.cpp"/>
@@ -262,6 +278,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/threadx.html"/>
+                    <file category="header" name="ports/threadx/qp_port.hpp"/>
+                    <file category="header" name="ports/threadx/qs_port.hpp"/>
                     <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/threadx/"/>
                     <file category="source" name="ports/threadx/qf_port.cpp"/>
@@ -274,6 +292,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/uc-os2.html"/>
+                    <file category="header" name="ports/uc-os2/qp_port.hpp"/>
+                    <file category="header" name="ports/uc-os2/qs_port.hpp"/>
                     <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="ports/uc-os2/"/>
                     <file category="source" name="ports/uc-os2/qf_port.cpp"/>
@@ -286,6 +306,8 @@
                 </RTE_Components_h>
                 <files>
                     <file category="doc" name="https://www.state-machine.com/qpcpp/zephyr.html"/>
+                    <file category="header" name="zephyr/qp_port.hpp"/>
+                    <file category="header" name="zephyr/qs_port.hpp"/>
                     <file attr="config" category="header" name="ports/config/qp_config.hpp" version="7.3.4"/>
                     <file category="include" name="zephyr/"/>
                     <file category="source" name="zephyr/qf_port.cpp"/>
