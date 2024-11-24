@@ -7,7 +7,7 @@
     <license>LICENSES/License.txt</license>
     <supportContact>info@state-machine.com.com</supportContact>
     <releases>
-        <release date="2024-10-31" tag="v8.0.0" url="https://github.com/QuantumLeaps/qpc/releases/download/v8.0.0/QuantumLeaps.qpcpp.8.0.0.pack" version="8.0.0">
+        <release date="2024-10-31" tag="v8.0.0" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.0.0/QuantumLeaps.qpcpp.8.0.0.pack" version="8.0.0">
             QP/C++ 8.0.0. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_0_0
         </release>
         <release date="2024-03-21" tag="v7.3.4" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v7.3.4/QuantumLeaps.qpcpp.7.3.4.pack" version="7.3.4">QP/C++ 7.3.4. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_7_3_4
