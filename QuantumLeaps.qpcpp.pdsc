@@ -126,7 +126,7 @@
         </condition>
     </conditions>
     <components>
-        <bundle Cbundle="qpcpp" Cclass="RTEF">
+        <bundle Cbundle="qpcpp" Cclass="RTEF" Cversion="8.1.2">
             <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
             <doc>https://www.state-machine.com/products/qp/</doc>
             <component Cgroup="Event Processor" Cvariant="qep">
