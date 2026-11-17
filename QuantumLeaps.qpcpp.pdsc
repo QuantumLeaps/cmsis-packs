@@ -4,9 +4,11 @@
     <name>qpcpp</name>
     <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
     <url>https://raw.githubusercontent.com/QuantumLeaps/cmsis-packs/main/</url>
-    <license>LICENSES/License.txt</license>
+    <license>LICENSE.txt</license>
     <supportContact>info@state-machine.com.com</supportContact>
     <releases>
+        <release date="2026-11-17" tag="v8.1.6" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.6/QuantumLeaps.qpcpp.8.1.6.pack" version="8.1.6">QP/C++ 8.1.6. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_5
+        </release>
         <release date="2026-08-05" tag="v8.1.5" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.5/QuantumLeaps.qpcpp.8.1.5.pack" version="8.1.5">QP/C++ 8.1.5. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_5
         </release>
         <release date="2026-04-13" tag="v8.1.4" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.4/QuantumLeaps.qpcpp.8.1.4.pack" version="8.1.4">QP/C++ 8.1.4. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_4
@@ -14,8 +16,6 @@
         <release date="2026-03-09" tag="v8.1.3" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.3/QuantumLeaps.qpcpp.8.1.3.pack" version="8.1.3">QP/C++ 8.1.3. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_3
         </release>
         <release date="2026-01-05" tag="v8.1.2" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.2/QuantumLeaps.qpcpp.8.1.2.pack" version="8.1.2">QP/C++ 8.1.2. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_2
-        </release>
-        <release date="2025-10-08" tag="v8.1.1" url="https://github.com/QuantumLeaps/qpcpp/releases/download/v8.1.1/QuantumLeaps.qpcpp.8.1.1.pack" version="8.1.1">QP/C++ 8.1.1. See release notes at https://www.state-machine.com/qpcpp/history.html#qpcpp_8_1_1
         </release>
     </releases>
     <keywords>
@@ -120,7 +120,7 @@
         </condition>
     </conditions>
     <components>
-        <bundle Cbundle="qpcpp" Cclass="RTEF" Cversion="8.1.4">
+        <bundle Cbundle="qpcpp" Cclass="RTEF" Cversion="8.1.6">
             <description>QP/C++ RTEF (Real-Time Embedded Framework)</description>
             <doc>https://www.state-machine.com/products/qp/</doc>
             <component Cgroup="Event Processor" Cvariant="qep">
